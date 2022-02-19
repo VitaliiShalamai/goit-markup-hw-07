@@ -357,6 +357,10 @@ body {
   width: 270px;
 }
 
+.feature-list:not(:last-child) {
+  margin-right: 30px;
+}
+
 .featurs-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -377,10 +381,6 @@ body {
 .icon-featere {
   height: 70px;
   width: 70px;
-}
-
-.feature-list:not(:last-child) {
-  margin-right: 30px;
 }
 
 .featur-title {
