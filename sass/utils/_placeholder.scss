@@ -15,3 +15,9 @@
     -o-transition     : 250ms ease-in-out;
     transition        : 250ms ease-in-out;
 }
+
+%flexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

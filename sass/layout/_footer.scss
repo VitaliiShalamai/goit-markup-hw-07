@@ -62,12 +62,11 @@
 }
 
 .footer-social-list .footer-social-link {
-    display        : flex;
+    @extend %flexcenter;
     height         : 44px;
     width          : 44px;
     border-radius  : 50%;
-    align-items    : center;
-    justify-content: center;
+
     fill           : var(--primary-bg-color);
     background     : rgba(255, 255, 255, 0.1);
 

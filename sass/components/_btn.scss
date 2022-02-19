@@ -18,9 +18,7 @@
 }
 
 .main-btn {
-    display         : flex;
-    justify-content : center;
-    align-items     : center;
+    @extend %flexcenter;
     margin: 0 auto;
 
     &:hover,

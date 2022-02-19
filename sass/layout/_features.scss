@@ -21,9 +21,7 @@
 
 
 .featurs-link {
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
+    @extend %flexcenter;
     margin-bottom  : 30px;
     background     : #F5F4FA;
     border-radius  : 4px;

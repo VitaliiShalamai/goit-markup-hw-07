@@ -19,9 +19,7 @@
 
 .modal-close {
     position        : absolute;
-    display         : flex;
-    justify-content : center;
-    align-items     : center;
+    @extend %flexcenter;
     top             : 10px;
     right           : 10px;
     border          : 1px solid #999999;
@@ -98,9 +96,7 @@
 }
 
 .modal-check-field {
-    display    : flex;
-    align-items: center;
-    align-items: center;
+    @extend %flexcenter;
 
     font-size     : 14px;
     line-height   : 1.71;
