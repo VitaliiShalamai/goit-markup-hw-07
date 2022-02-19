@@ -525,6 +525,30 @@ body {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.project-item:hover {
+  background: #FFFFFF;
+  border: -1px solid #EEEEEE;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-item:hover .overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  background: rgba(33, 150, 243, 0.9);
+  opacity: 1;
+}
+
+.project-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.project-item:nth-last-child(-n+3) {
+  margin-bottom: 0;
+}
+
 .product-thumb {
   position: relative;
   overflow: hidden;
@@ -547,30 +571,6 @@ body {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background: rgba(33, 150, 243, 0.9);
   opacity: 0;
-}
-
-.project-item:hover .overlay {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  background: rgba(33, 150, 243, 0.9);
-  opacity: 1;
-}
-
-.project-item:hover {
-  background: #FFFFFF;
-  border: -1px solid #EEEEEE;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.project-item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.project-item:nth-last-child(-n+3) {
-  margin-bottom: 0;
 }
 
 img {
@@ -881,16 +881,23 @@ html {
   width: 30px;
   height: 30px;
   cursor: pointer;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
-.modal-close,
 .icon-hero {
   fill: var(--logo-color-header);
   -webkit-transition: 250ms ease-in-out;
   transition: 250ms ease-in-out;
 }
 
-.modal-close:hover .icon-hero {
+.icon-hero:hover {
+  fill: var(--accent-color);
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+}
+
+.icon-hero:hover .icon-hero {
   fill: var(--accent-color);
   -webkit-transition: 250ms ease-in-out;
   transition: 250ms ease-in-out;
@@ -955,6 +962,10 @@ html {
   cursor: pointer;
 }
 
+.modal-check-field:focus + .checkbox-icon:checked {
+  color: var(--accent-color);
+}
+
 .modal-label {
   display: block;
   margin-bottom: 4px;
@@ -978,10 +989,6 @@ html {
   cursor: pointer;
 }
 
-.modal-input:focus + .modal-icon {
-  fill: var(--accent-color);
-}
-
 .modal-input {
   width: 100%;
   height: 40px;
@@ -997,6 +1004,10 @@ html {
 
 .modal-input:focus {
   border-color: var(--accent-color);
+}
+
+.modal-input:focus:focus + .modal-icon {
+  fill: var(--accent-color);
 }
 
 .modal-input::-webkit-input-placeholder {
@@ -1037,6 +1048,14 @@ html {
   border-radius: 4px;
 }
 
+.modal-check-text {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
 .agreement {
   color: var(--accent-color);
 }
@@ -1059,20 +1078,26 @@ html {
   border-radius: 3px;
 }
 
-.modal-check:checked::before {
+.modal-check:checked :before {
   background: #2196F3 url(../images/checked.svg) center no-repeat;
+}
+
+.modal-check:checked + .modal-check-text span {
+  background-color: var(--accent-color);
+  border: none;
+}
+
+.modal-check:checked + .modal-check-text svg {
+  fill: #ffffff;
 }
 
 .modal-check-text {
   position: relative;
   display: block;
-  cursor: pointer;
   line-height: 20px;
   padding-left: 40px;
   font-size: 14px;
-  line-height: 1.71px;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: #999999;
 }
 
 .modal-check-text span {
@@ -1092,15 +1117,6 @@ html {
           justify-content: center;
 }
 
-.modal-check:checked + .modal-check-text span {
-  background-color: var(--accent-color);
-  border: none;
-}
-
-.modal-check:checked + .modal-check-text svg {
-  fill: #ffffff;
-}
-
 .check-agreement {
   color: var(--primary-text-color);
   margin-left: 6px;
@@ -1116,10 +1132,6 @@ html {
   line-height: 1.71;
   margin: 100px;
   letter-spacing: 0.03em;
-}
-
-.modal-check-field:focus + .checkbox-icon:checked {
-  color: var(--accent-color);
 }
 
 .agreement-color {
