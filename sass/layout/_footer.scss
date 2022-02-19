@@ -14,6 +14,10 @@
     line-height    : 1.71;
     letter-spacing : 0.03em;
     font-style     : normal;
+    &:hover, &:focus {
+    color: var(--accent-color);
+    fill : var(--accent-color);
+    }
 }
 
 .footer-nav .link-office {
@@ -26,7 +30,7 @@
     &:hover,&:focus {
     color: var(--accent-color);
     fill : var(--accent-color);
-}
+    }
 }
 
 .footer-box {
