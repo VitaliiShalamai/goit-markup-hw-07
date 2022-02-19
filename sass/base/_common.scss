@@ -1,21 +1,3 @@
-a, a:visited {
-    -webkit-transition: 1s ease-in-out;
-       -moz-transition: 1s ease-in-out;
-        -ms-transition: 1s ease-in-out;
-         -o-transition: 1s ease-in-out;
-            transition: 1s ease-in-out;
-}
-
-a:hover, a:active {
-    -webkit-transition: 1s ease-in-out;
-       -moz-transition: 1s ease-in-out;
-        -ms-transition: 1s ease-in-out;
-         -o-transition: 1s ease-in-out;
-            transition: 1s ease-in-out;
-}
-
-
-
 body {
     background-color: var(--primary-bg-color);
     color           : var(--primary-text-color);

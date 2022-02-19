@@ -768,16 +768,6 @@ img {
   margin: -1px;
 }
 
-a, a:visited {
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-}
-
-a:hover, a:active {
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-}
-
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
@@ -862,26 +852,14 @@ html {
   width: 30px;
   height: 30px;
   cursor: pointer;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
 }
 
 .icon-hero {
   fill: var(--logo-color-header);
-  -webkit-transition: 250ms ease-in-out;
-  transition: 250ms ease-in-out;
-}
-
-.icon-hero:hover {
-  fill: var(--accent-color);
-  -webkit-transition: 250ms ease-in-out;
-  transition: 250ms ease-in-out;
 }
 
 .icon-hero:hover .icon-hero {
   fill: var(--accent-color);
-  -webkit-transition: 250ms ease-in-out;
-  transition: 250ms ease-in-out;
 }
 
 .hero-title {
@@ -1136,5 +1114,21 @@ html {
   --hero-text-color: #FFFFFF;
   --button-text-color: #FFFFFF;
   --potfolio-bg-color: #F5F4FA;
+}
+
+.modal-close, .icon-hero, .icon-hero:hover .icon-hero,
+.modal-close:visited,
+.icon-hero:visited,
+.icon-hero:hover .icon-hero:visited {
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+}
+
+.modal-close:hover, .icon-hero:hover, .icon-hero:hover .icon-hero:hover,
+.modal-close:active,
+.icon-hero:active,
+.icon-hero:hover .icon-hero:active {
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
 }
 /*# sourceMappingURL=main.css.map */
