@@ -1,0 +1,54 @@
+.featurs {
+    padding-top: 94px;
+}
+
+.main-project {
+    padding-top   : 94px;
+    padding-bottom: 94px;
+}
+
+.our-featur {
+    display     : flex;
+    padding-left: 0;
+}
+
+.feature-list {
+    width: 270px;
+}
+
+.featurs-link {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    margin-bottom  : 30px;
+    background     : #F5F4FA;
+    border-radius  : 4px;
+    height         : 120px;
+    width          : 270px;
+}
+
+.icon-featere {
+    height: 70px;
+    width : 70px;
+}
+
+.feature-list:not(:last-child) {
+    margin-right: 30px;
+}
+
+.featur-title {
+    margin-top    : 0;
+    margin-bottom : 10px;
+    color         : var(--title-text-color);
+    font-weight   : bold;
+    font-size     : 14px;
+    line-height   : 1.14;
+    text-transform: uppercase;
+}
+
+.featur-text {
+    font-size     : 14px;
+    line-height   : 1.71;
+    letter-spacing: 0.03em;
+    color         : var(--primary-text-color);
+}

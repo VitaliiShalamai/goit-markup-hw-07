@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(129, 127, 255);
+}
+
+@import '../sass/layout/header';
+@import './/layout/footer';
+@import './/layout/clients';
+@import '../sass/layout/features';
+@import '../sass/layout/hero';
+@import '../sass/layout/portfolio';
+@import '../sass/layout/projects';
+@import '../sass/layout/team';
+@import '../sass/layout/works';
+@import '../sass/utils/hidden';
+@import '../sass/base/common';
+@import '../sass/base/reset';
