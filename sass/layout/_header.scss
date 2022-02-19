@@ -1,6 +1,12 @@
 .site-nav {
     display     : flex;
     padding-left: 93px;
+    & .nav-item:not(:last-child) {
+        margin-right: 50px;
+    }
+    & .link.current {
+        color: var(--accent-color);
+    }
 }
 
 .contact-block {
@@ -31,10 +37,6 @@
     background: #2196F3;
 }
 
-.site-nav .nav-item:not(:last-child) {
-    margin-right: 50px;
-}
-
 .site-nav .link {
     display        : flex;
     padding-top    : 10px;
@@ -53,11 +55,6 @@
     }
 }
 
-
-.site-nav .link.current {
-    color: var(--accent-color);
-}
-
 .main-nav {
     display    : flex;
     align-items: center;
@@ -73,11 +70,11 @@
 .header-nav {
     display    : flex;
     margin-left: auto;
+    & .nav-item:not(:last-child) {
+        margin-right: 50px;
+    }
 }
 
-.header-nav .nav-item:not(:last-child) {
-    margin-right: 50px;
-}
 
 .header-nav .link-contact {
     color          : var(--primary-text-color);

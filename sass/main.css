@@ -9,6 +9,14 @@ body {
   padding-left: 93px;
 }
 
+.site-nav .nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
 .contact-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,10 +45,6 @@ body {
   background: #2196F3;
 }
 
-.site-nav .nav-item:not(:last-child) {
-  margin-right: 50px;
-}
-
 .site-nav .link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,10 +62,6 @@ body {
 }
 
 .site-nav .link:hover, .site-nav .link:focus {
-  color: var(--accent-color);
-}
-
-.site-nav .link.current {
   color: var(--accent-color);
 }
 
