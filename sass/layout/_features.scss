@@ -14,14 +14,12 @@
 
 .feature-list {
     width: 270px;
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
 }
 
-
 .featurs-link {
-    @extend %flexcenter;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
     margin-bottom  : 30px;
     background     : #F5F4FA;
     border-radius  : 4px;
@@ -32,6 +30,10 @@
 .icon-featere {
     height: 70px;
     width : 70px;
+}
+
+.feature-list:not(:last-child) {
+    margin-right: 30px;
 }
 
 .featur-title {
