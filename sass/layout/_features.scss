@@ -2,21 +2,20 @@
     padding-top: 94px;
 }
 
-.main-project {
-    padding-top   : 94px;
-    padding-bottom: 94px;
-}
-
-.our-featur {
+.feature {
     display     : flex;
     padding-left: 0;
 }
 
-.feature-list {
+.feature__list {
     width: 270px;
 }
 
-.featurs-link {
+.feature__list:not(:last-child) {
+    margin-right: 30px;
+}
+
+.feature__link {
     display        : flex;
     align-items    : center;
     justify-content: center;
@@ -27,13 +26,9 @@
     width          : 270px;
 }
 
-.icon-featere {
+.feature__icon {
     height: 70px;
     width : 70px;
-}
-
-.feature-list:not(:last-child) {
-    margin-right: 30px;
 }
 
 .featur-title {
