@@ -4,16 +4,16 @@
     font-size      : 26px;
     line-height    : 1.19;
     text-decoration: none;
-}
 
-.logo__accent {
-    color: var(--accent-color);
-}
+    &__accent {
+        color: var(--accent-color);
+    }
 
-.logo__second {
-    color: var(--logo-color-header);
-}
+    &__second {
+        color: var(--logo-color-header);
+    }
 
-.logo__footer {
-    color: var(--logo-color-footer);
+    &__footer {
+        color: var(--logo-color-footer);
+    }
 }

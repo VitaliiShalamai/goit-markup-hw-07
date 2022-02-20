@@ -1,15 +1,24 @@
-a, a:visited {
-    -webkit-transition: 1s ease-in-out;
-       -moz-transition: 1s ease-in-out;
-        -ms-transition: 1s ease-in-out;
-         -o-transition: 1s ease-in-out;
-            transition: 1s ease-in-out;
+
+%changecolor,
+%changecolor:visited {
+    -webkit-transition: 250ms ease-in-out;
+       -moz-transition: 250ms ease-in-out;
+        -ms-transition: 250ms ease-in-out;
+         -o-transition: 250ms ease-in-out;
+            transition: 250ms ease-in-out;
 }
 
-a:hover, a:active {
-    -webkit-transition: 1s ease-in-out;
-       -moz-transition: 1s ease-in-out;
-        -ms-transition: 1s ease-in-out;
-         -o-transition: 1s ease-in-out;
-            transition: 1s ease-in-out;
+%changecolor:hover,
+%changecolor:active {
+    -webkit-transition: 250ms ease-in-out;
+       -moz-transition: 250ms ease-in-out;
+        -ms-transition: 250ms ease-in-out;
+         -o-transition: 250ms ease-in-out;
+            transition: 250ms ease-in-out;
+}
+
+%flexcenter {
+   display        : flex;
+   justify-content: center;
+   align-items    : center;
 }
