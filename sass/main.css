@@ -572,6 +572,30 @@ html {
   color: var(--accent-color);
 }
 
+.contacts,
+.contacts__link,
+.link-contact {
+  color: var(--primary-text-color);
+  fill: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts .contacts__link:hover,
+.contacts .contacts__link:focus,
+.footer-nav .link-contact:hover,
+.footer-nav .link-contact:focus,
+.footer-nav .link-office:hover,
+.footer-nav .link-office:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
 .hero {
   background-color: var(--fill-color);
   -webkit-box-align: center;
